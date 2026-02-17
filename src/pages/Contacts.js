@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./page.css";
 
 const Contacts = () => {
   return (
-    <div>
-      <h1>Contacts</h1>
-    </div>
-  )
-}
+    <section className="page">
+      <h1 className="title">Contacts</h1>
 
-export default Contacts
+      <div className="contacts-block">
+        <p>Email: example@mail.com</p>
+        <p>Phone: +996 555 555 555</p>
+      </div>
+    </section>
+  );
+};
+
+export default Contacts;
