@@ -1,16 +1,28 @@
 .footer {
   background: #111;
-  padding: 30px 0;
-  display: flex;
-  justify-content: center;
+  padding: 60px 0;
+  text-align: center;
 }
 
 .socials {
   display: flex;
-  gap: 25px;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 30px;
 }
 
 .socials img {
-  width: 28px;
+  width: 32px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 14px;
 }

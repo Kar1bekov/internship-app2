@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -14,29 +15,33 @@ body.dark {
   color: white;
 }
 
-/* Главный контейнер */
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Центральный блок */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .hero {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   text-align: center;
+  gap: 20px;
+  padding: 100px 20px;
 }
 
-.hero span {
+.hero strong {
   color: #6c63ff;
 }
 
-/* Кнопка если есть */
 .download {
   padding: 12px 24px;
   background: #6c63ff;
@@ -46,30 +51,10 @@ body.dark {
   cursor: pointer;
 }
 
-/* Фото если есть */
 .profile-img {
   width: 220px;
 }
 
-/* главный flex контейнер */
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+footer {
+  margin-top: auto;
 }
-
-/* hero блок */
-.hero {
-  flex: 1;               /* 🔥 вот это важно */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-/* текст */
-.hero strong {
-  color: #6c63ff;
-}
-

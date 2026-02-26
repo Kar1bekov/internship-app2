@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate(); 
+
   return (
     <section
       className="hero"
@@ -8,19 +11,18 @@ const Home = () => {
         backgroundImage: "url(/img/header-bg.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        padding: "60px 20px"
       }}
     >
-      <div 
+      <div
         className="hero-content"
         style={{
           display: "flex",
           flexDirection: "column",
-          gap: "15px" // 👈 расстояние между текстами
+          gap: "20px",
         }}
       >
         <h1>
-          Hi, my name is <strong>Asan</strong>
+          Hi, my name is <strong>Uli</strong>
         </h1>
         <p>Frontend developer</p>
         <p>with passion for learning and creating.</p>
@@ -28,13 +30,14 @@ const Home = () => {
 
       <button
         className="btn-primary"
+        onClick={() => navigate("/projects")}
         style={{
           backgroundColor: "green",
-          borderRadius: "10px",
-          padding: "15px 35px", // 👈 кнопка больше
-          fontSize: "18px",     // 👈 текст больше
-          marginTop: "25px",    // 👈 отступ сверху
-          cursor: "pointer"
+          borderRadius: "15px",
+          padding: "15px 35px",
+          fontSize: "18px",
+          marginTop: "25px",
+          cursor: "pointer",
         }}
       >
         Download CV

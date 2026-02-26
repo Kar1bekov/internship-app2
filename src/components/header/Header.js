@@ -1,20 +1,43 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 import BtnDarkMode from "../btnDarkMode/BtnDarkMode";
 
 const Header = () => {
-  const openWindow = (page) => {
-    window.open(`/${page}.html`, "_blank", "width=1400,height=760");
-  };
-
   return (
-    <header className="header">
-      <div className="logo">Freelance portfolio</div>
+    <header
+      className="header"
+      style={{
+        width: "100%",
+        backgroundColor: "#111",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "15px 40px"
+      }}
+    >
+      <Link
+        to="/"
+        className="logo"
+        style={{ color: "blue", textDecoration: "none" }}
+      >
+        FREELANCE  portfolio
+      </Link>
 
-      <nav>
-        <button onClick={() => openWindow("projects")}>Projects</button>
-        <button onClick={() => openWindow("skills")}>Skills</button>
-        <button onClick={() => openWindow("contacts")}>Contacts</button>
+      <nav style={{ display: "flex", gap: "20px" }}>
+
+        <Link to="/project" style={{ color: "blue", textDecoration: "none" }}>
+          <b>Project</b>
+        </Link>
+
+        <Link to="/skills" style={{ color: "blue", textDecoration: "none" }}>
+         <b> Skills</b>
+        </Link>
+
+        <Link to="/contacts" style={{ color: "blue", textDecoration: "none" }}>
+          <b>Contacts</b>
+        </Link>
+
         <BtnDarkMode />
       </nav>
     </header>

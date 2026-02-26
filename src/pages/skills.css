@@ -1,0 +1,31 @@
+.skills {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.title-1 {
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #5c62ec;
+}
+
+.title-2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content-list__item p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}

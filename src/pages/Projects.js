@@ -4,7 +4,10 @@ import "./page.css";
 const Projects = () => {
   return (
     <section className="page">
-      <h1 className="title">Projects</h1>
+      <h1 className="title"
+      style={{
+        color: '#2d59e8f5'
+      }}>Projects</h1>
 
       <div className="projects-grid">
         <img src="/img/projects/01.jpg" alt="project" />

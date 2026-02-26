@@ -11,8 +11,11 @@ const BtnDarkMode = () => {
   }, [dark]);
 
   return (
-    <button className="theme-btn" onClick={() => setDark(!dark)}>
-      {dark ? "☀" : "🌙"}
+    <button className="theme-btn" onClick={() => setDark(!dark)}
+    style={{
+      color: '#c0e607'
+    }}>
+      {dark ? "🌙" : "☀"}
     </button>
   );
 };
