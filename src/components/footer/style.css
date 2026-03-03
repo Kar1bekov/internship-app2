@@ -1,18 +1,18 @@
 .footer {
   background: #111;
-  padding: 30px 0;   /* было 60 → стало 30 */
+  padding: 30px 0;   
   text-align: center;
 }
 
 .socials {
   display: flex;
   justify-content: center;
-  gap: 25px;        /* немного уменьшим */
-  margin-bottom: 15px;  /* было 30 */
+  gap: 25px;        
+  margin-bottom: 15px; 
 }
 
 .socials img {
-  width: 28px;      /* было 32 */
+  width: 28px;      
   transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
 }
@@ -24,5 +24,5 @@
 
 .copyright {
   color: #aaa;
-  font-size: 13px;  /* чуть меньше */
+  font-size: 13px; 
 }
