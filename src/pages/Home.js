@@ -30,7 +30,6 @@ const Home = () => {
 
       <button
         className="btn-primary"
-        onClick={() => navigate("/projects")}
         style={{
           backgroundColor: "green",
           borderRadius: "15px",

@@ -21,17 +21,17 @@ const Header = () => {
         className="logo"
         style={{ color: "blue", textDecoration: "none" }}
       >
-        FREELANCE  portfolio
+        FREELANCE portfolio
       </Link>
 
-      <nav style={{ display: "flex", gap: "20px" }}>
-
-        <Link to="/project" style={{ color: "blue", textDecoration: "none" }}>
-          <b>Project</b>
+      <nav style={{ display: "flex", gap: "20px", alignItems: "center" }}>
+        
+        <Link to="/projects" style={{ color: "blue", textDecoration: "none" }}>
+          <b>Projects</b>
         </Link>
 
         <Link to="/skills" style={{ color: "blue", textDecoration: "none" }}>
-         <b> Skills</b>
+          <b>Skills</b>
         </Link>
 
         <Link to="/contacts" style={{ color: "blue", textDecoration: "none" }}>

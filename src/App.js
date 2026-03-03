@@ -17,42 +17,14 @@ function App() {
       <Header />
 
       <Routes>
-  
         <Route path="/" element={<Home />} />
-
         <Route path="/projects" element={<Projects />} />
-
-        <Route
-          path="/project"
-          element={
-            <>
-              <Project />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/skills"
-          element={
-            <>
-              <Skills />
-              <Footer />
-            </>
-          }
-        />
-
-
-        <Route
-          path="/contacts"
-          element={
-            <>
-              <Contacts />
-              <Footer />
-            </>
-          }
-        />
+        <Route path="/project" element={<Project />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }
